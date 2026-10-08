@@ -60,11 +60,7 @@
           <article class="service-card"><div class="icon">⌕</div><h3>Recherche web</h3><p>Recherche d’informations et préparation de résultats clairs.</p></article>
           <article class="service-card"><div class="icon">☏</div><h3>Service client</h3><p>Réponse aux demandes simples et suivi des clients.</p></article>
           <article class="service-card"><div class="icon">✓</div><h3>Assistance administrative</h3><p>Aide dans différentes tâches administratives selon vos besoins.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section id="apropos" class="section soft">
+        </
       <div class="container about-grid">
         <div>
           <p class="eyebrow">À PROPOS</p>
@@ -118,4 +114,864 @@
     </div>
   </footer>
 </body>
-</html>
+</html><!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Prisca Assistante | Assistance virtuelle à distance</title>
+
+  <meta name="description"
+        content="Prisca Assistante propose des services d'assistance virtuelle, administrative et digitale à distance. Prestations personnalisées selon vos besoins.">
+
+  <style>
+    :root {
+      --navy: #0b1736;
+      --navy-light: #14264f;
+      --gold: #c9a45c;
+      --gold-light: #e2c987;
+      --white: #ffffff;
+      --cream: #f7f5ef;
+      --text: #263044;
+      --muted: #697386;
+      --border: #e7e5df;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: min(1120px, 92%);
+      margin: auto;
+    }
+
+    /* NAVIGATION */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(11, 23, 54, 0.97);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    nav {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .logo {
+      color: white;
+      font-size: 1.35rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    .logo span {
+      color: var(--gold-light);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: #fff;
+      font-size: 0.94rem;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: var(--gold-light);
+    }
+
+    /* HERO */
+
+    .hero {
+      min-height: 650px;
+      display: flex;
+      align-items: center;
+      color: white;
+      background:
+        radial-gradient(circle at 80% 20%, rgba(201,164,92,0.18), transparent 30%),
+        linear-gradient(135deg, #08132e, #14264f);
+    }
+
+    .hero-content {
+      max-width: 780px;
+      padding: 90px 0;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 8px 15px;
+      margin-bottom: 22px;
+      border: 1px solid rgba(226,201,135,0.45);
+      border-radius: 50px;
+      color: var(--gold-light);
+      font-size: 0.85rem;
+      letter-spacing: 0.5px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.5rem, 6vw, 4.8rem);
+      line-height: 1.08;
+      margin-bottom: 25px;
+      font-weight: 750;
+    }
+
+    .hero h1 span {
+      color: var(--gold-light);
+    }
+
+    .hero p {
+      max-width: 650px;
+      color: #dbe2f0;
+      font-size: 1.1rem;
+      margin-bottom: 35px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 23px;
+      border-radius: 8px;
+      font-weight: 700;
+      transition: 0.3s;
+      border: 1px solid transparent;
+    }
+
+    .btn-gold {
+      background: var(--gold);
+      color: #101a2f;
+    }
+
+    .btn-gold:hover {
+      background: var(--gold-light);
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      color: white;
+      border-color: rgba(255,255,255,0.35);
+    }
+
+    .btn-outline:hover {
+      border-color: var(--gold-light);
+      color: var(--gold-light);
+    }
+
+    /* SECTIONS */
+
+    section {
+      padding: 90px 0;
+    }
+
+    .section-header {
+      max-width: 700px;
+      margin-bottom: 45px;
+    }
+
+    .section-label {
+      color: var(--gold);
+      font-size: 0.8rem;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: var(--navy);
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.2;
+      margin-bottom: 15px;
+    }
+
+    .section-header p {
+      color: var(--muted);
+    }
+
+    /* SERVICES */
+
+    .services {
+      background: var(--cream);
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 18px 45px rgba(11,23,54,0.08);
+      border-color: rgba(201,164,92,0.5);
+    }
+
+    .icon {
+      width: 48px;
+      height: 48px;
+      display: grid;
+      place-items: center;
+      border-radius: 12px;
+      background: #f4eee2;
+      color: var(--navy);
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+    }
+
+    .card h3 {
+      color: var(--navy);
+      margin-bottom: 10px;
+      font-size: 1.15rem;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    /* ABOUT */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 65px;
+      align-items: center;
+    }
+
+    .about-box {
+      padding: 35px;
+      background: var(--navy);
+      color: white;
+      border-radius: 18px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about-box::after {
+      content: "";
+      position: absolute;
+      width: 180px;
+      height: 180px;
+      border: 1px solid rgba(226,201,135,0.25);
+      border-radius: 50%;
+      right: -70px;
+      bottom: -70px;
+    }
+
+    .about-box h3 {
+      font-size: 1.7rem;
+      margin-bottom: 15px;
+    }
+
+    .about-box p {
+      color: #dbe2f0;
+    }
+
+    .check-list {
+      list-style: none;
+      margin-top: 25px;
+    }
+
+    .check-list li {
+      margin: 13px 0;
+    }
+
+    .check-list li::before {
+      content: "✓";
+      color: var(--gold);
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    /* PROCESS */
+
+    .process {
+      background: var(--cream);
+    }
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .step {
+      text-align: center;
+      padding: 25px;
+    }
+
+    .number {
+      width: 55px;
+      height: 55px;
+      display: grid;
+      place-items: center;
+      margin: 0 auto 18px;
+      border-radius: 50%;
+      background: var(--navy);
+      color: var(--gold-light);
+      font-weight: 800;
+    }
+
+    .step h3 {
+      color: var(--navy);
+      margin-bottom: 8px;
+    }
+
+    .step p {
+      color: var(--muted);
+    }
+
+    /* OFFER */
+
+    .offer {
+      background: var(--navy);
+      color: white;
+    }
+
+    .offer-box {
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .offer h2 {
+      color: white;
+    }
+
+    .offer p {
+      color: #dbe2f0;
+      margin-bottom: 28px;
+    }
+
+    .personalized {
+      display: inline-block;
+      color: var(--gold-light);
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 25px;
+    }
+
+    /* CONTACT */
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+    }
+
+    .contact-card {
+      padding: 35px;
+      border: 1px solid var(--border);
+      border-radius: 15px;
+    }
+
+    .contact-card h3 {
+      color: var(--navy);
+      margin-bottom: 10px;
+    }
+
+    .contact-card p {
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+
+    .contact-link {
+      display: inline-block;
+      color: var(--navy);
+      font-weight: 700;
+      word-break: break-word;
+    }
+
+    .contact-link:hover {
+      color: var(--gold);
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: #071027;
+      color: #aeb9ce;
+      padding: 35px 0;
+      text-align: center;
+    }
+
+    footer strong {
+      color: white;
+    }
+
+    .footer-gold {
+      color: var(--gold-light);
+    }
+
+    /* WHATSAPP FLOAT */
+
+    .whatsapp {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 999;
+      width: 58px;
+      height: 58px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: #25D366;
+      color: white;
+      font-size: 1.5rem;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+      transition: 0.3s;
+    }
+
+    .whatsapp:hover {
+      transform: scale(1.08);
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 850px) {
+
+      .nav-links {
+        display: none;
+      }
+
+      nav {
+        justify-content: center;
+      }
+
+      .service-grid,
+      .process-grid,
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        min-height: auto;
+      }
+
+      .hero-content {
+        padding: 80px 0;
+      }
+
+      section {
+        padding: 65px 0;
+      }
+
+      .hero h1 {
+        font-size: 2.7rem;
+      }
+
+      .buttons {
+        flex-direction: column;
+      }
+
+      .btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <a href="#accueil" class="logo">
+        Prisca <span>Assistante</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- ACCUEIL -->
+
+  <section class="hero" id="accueil">
+    <div class="container">
+      <div class="hero-content">
+
+        <div class="badge">
+          Assistance virtuelle à distance
+        </div>
+
+        <h1>
+          Votre temps est précieux.<br>
+          <span>Je vous aide à le gagner.</span>
+        </h1>
+
+        <p>
+          Je vous accompagne dans vos tâches administratives,
+          digitales et quotidiennes afin de vous permettre de
+          vous concentrer sur l’essentiel de votre activité.
+        </p>
+
+        <div class="buttons">
+          <a
+            class="btn btn-gold"
+            href="https://wa.me/261378963352"
+            target="_blank">
+            Me contacter sur WhatsApp
+          </a>
+
+          <a class="btn btn-outline" href="#services">
+            Découvrir mes services
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SERVICES -->
+
+  <section class="services" id="services">
+    <div class="container">
+
+      <div class="section-header">
+        <div class="section-label">Mes services</div>
+
+        <h2>
+          Une assistance adaptée à vos besoins
+        </h2>
+
+        <p>
+          Je peux vous accompagner sur différentes tâches
+          administratives et digitales, à distance.
+        </p>
+      </div>
+
+      <div class="service-grid">
+
+        <div class="card">
+          <div class="icon">✉</div>
+          <h3>Gestion des emails</h3>
+          <p>
+            Organisation, tri et traitement de vos emails
+            ainsi que rédaction de réponses professionnelles.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">⌨</div>
+          <h3>Saisie de données</h3>
+          <p>
+            Saisie, classement et organisation de vos
+            informations et documents.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">📝</div>
+          <h3>Rédaction & correction</h3>
+          <p>
+            Rédaction et correction de textes simples,
+            messages et documents professionnels.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">📅</div>
+          <h3>Organisation</h3>
+          <p>
+            Aide à la gestion des rendez-vous,
+            tâches et informations importantes.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">📱</div>
+          <h3>Réseaux sociaux</h3>
+          <p>
+            Assistance pour la publication et la gestion
+            de contenus sur vos réseaux sociaux.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">🔎</div>
+          <h3>Recherche en ligne</h3>
+          <p>
+            Recherche d'informations fiables et organisation
+            des résultats selon vos besoins.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- À PROPOS -->
+
+  <section id="apropos">
+    <div class="container">
+
+      <div class="about-grid">
+
+        <div>
+          <div class="section-label">À propos</div>
+
+          <h2>
+            Une assistance sérieuse, organisée et à votre écoute.
+          </h2>
+
+          <p>
+            Je propose mes services d'assistance virtuelle
+            aux entrepreneurs, petites entreprises et particuliers
+            qui souhaitent gagner du temps dans leurs tâches
+            quotidiennes.
+          </p>
+
+          <ul class="check-list">
+            <li>Travail à distance</li>
+            <li>Communication en français</li>
+            <li>Organisation et sérieux</li>
+            <li>Respect des consignes</li>
+            <li>Prestations adaptées à vos besoins</li>
+          </ul>
+        </div>
+
+        <div class="about-box">
+          <h3>Pourquoi travailler ensemble ?</h3>
+
+          <p>
+            Chaque mission est étudiée selon vos besoins,
+            vos objectifs et vos priorités.
+          </p>
+
+          <p style="margin-top:18px;">
+            L'objectif est simple : vous faire gagner du temps
+            tout en vous apportant une assistance fiable.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FONCTIONNEMENT -->
+
+  <section class="process">
+    <div class="container">
+
+      <div class="section-header">
+        <div class="section-label">Comment ça marche ?</div>
+
+        <h2>
+          Simple, clair et efficace
+        </h2>
+
+        <p>
+          Une collaboration pensée pour être facile dès le premier contact.
+        </p>
+      </div>
+
+      <div class="process-grid">
+
+        <div class="step">
+          <div class="number">01</div>
+          <h3>Vous me contactez</h3>
+          <p>
+            Expliquez-moi simplement la tâche ou le besoin
+            pour lequel vous recherchez une assistance.
+          </p>
+        </div>
+
+        <div class="step">
+          <div class="number">02</div>
+          <h3>Nous définissons la mission</h3>
+          <p>
+            Nous échangeons sur vos attentes, vos délais
+            et les modalités de la prestation.
+          </p>
+        </div>
+
+        <div class="step">
+          <div class="number">03</div>
+          <h3>Je réalise la mission</h3>
+          <p>
+            Je réalise le travail selon les consignes
+            convenues avec vous.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PRESTATION -->
+
+  <section class="offer">
+    <div class="container">
+
+      <div class="offer-box">
+
+        <div class="section-label">
+          Une solution adaptée
+        </div>
+
+        <h2>
+          Prestation personnalisée
+        </h2>
+
+        <p>
+          Chaque besoin est différent. Les prestations sont
+          donc définies en fonction de la mission, du volume
+          de travail et de vos attentes.
+        </p>
+
+        <div class="personalized">
+          Parlons de votre projet
+        </div>
+
+        <br>
+
+        <a
+          class="btn btn-gold"
+          href="https://wa.me/261378963352?text=Bonjour%20Prisca%2C%20je%20souhaite%20avoir%20des%20informations%20sur%20vos%20prestations."
+          target="_blank">
+          Demander une prestation
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CONTACT -->
+
+  <section id="contact">
+    <div class="container">
+
+      <div class="section-header">
+        <div class="section-label">Contact</div>
+
+        <h2>
+          Parlons de votre besoin
+        </h2>
+
+        <p>
+          Vous avez une tâche à déléguer ? Contactez-moi
+          pour discuter de votre projet.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+
+        <div class="contact-card">
+          <h3>WhatsApp</h3>
+
+          <p>
+            Pour une réponse rapide, contactez-moi directement.
+          </p>
+
+          <a
+            class="contact-link"
+            href="https://wa.me/261378963352"
+            target="_blank">
+            +261 37 89 63 352
+          </a>
+        </div>
+
+        <div class="contact-card">
+          <h3>Email</h3>
+
+          <p>
+            Pour une demande professionnelle ou détaillée.
+          </p>
+
+          <a
+            class="contact-link"
+            href="mailto:maprisca9@gmail.com">
+            maprisca9@gmail.com
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+
+<footer>
+  <div class="container">
+    <p>
+      © 2026 <strong>Prisca Assistante</strong>.
+      Assistance virtuelle à distance.
+    </p>
+
+    <p class="footer-gold">
+      Prestation personnalisée selon vos besoins.
+    </p>
+  </div>
+</footer>
+
+
+<!-- BOUTON WHATSAPP -->
+
+<a
+  class="whatsapp"
+  href="https://wa.me/261378963352"
+  target="_blank"
+  aria-label="Contacter Prisca sur WhatsApp">
+  ☎
+</a>
+
+</body>
+  </html>
